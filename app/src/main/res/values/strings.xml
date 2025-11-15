@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">apppeliculas</string>
+    <string name="btnReproducir">Reproducir</string>
+    <string name="txtUsuario">correo</string>
+    <string name="txtPassword">Contraseña</string>
+    <string name="txtRagistrar">Registrar</string>
+    <string name="btnAcceder">Acceder</string>
+    <string name="btnRegistrar">Registrar</string>
+    <string name="txtpass">Contraseña</string>
+    <string name="txtCorreo">Correo electrónico</string>
+    <string name="txtUNombre">Nombre de usuario</string>
+    <string name="imgLogin">Login</string>
+
+
+
+</resources>
