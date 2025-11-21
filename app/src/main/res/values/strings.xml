@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">RegistroAsistencia</string>
+    <string name="btnAgregar">Agregar</string>
+    <string name="btRegistro">Registro</string>
+    <string name="btnAsistencia">Asistencia</string>
+    <string name="btMisVis">Misión y Visión</string>
+    <string name="btConocenos">Conocenos</string>
+    <string name="etNombre">Nombre</string>
+    <string name="etPaterno">Apellido Paterno</string>
+    <string name="etMaterno">Apellido Materno</string>
+    <string name="etCorreo">Correo</string>
+    <string name="etPass">Contraseña</string>
+    <string name="edTelefono">Telefono</string>
+    <string name="btGuardar">Guardar</string>
+    <string name="btActualizar">Actualizar</string>
+    <string name="btBorrar">Borrar</string>
+
+    <string name="textView3">Misión</string>
+    <string name="textViewVision">Visión</string>
+    <string name="textViewInfo">¿Por qué elegirnos?</string>
+    <string name="btTomar">Tomar foto</string>
+    <string name="txttitulo">Lista de asistencias</string>
+    <string name="txtEstado">Estado</string>
+    <string name="txtdia">Día</string>
+
+
+
+
+</resources>

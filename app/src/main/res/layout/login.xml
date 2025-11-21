@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bccbd2"
+    android:backgroundTint="#bccbd2"
+    tools:context=".Vista.LoginVistaVista">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="185dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="53dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/logoacero" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="313dp"
+        android:layout_height="408dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="321dp"
+            android:layout_height="424dp"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/btAcceder"
+                android:layout_width="291dp"
+                android:layout_height="53dp"
+                android:layout_marginBottom="84dp"
+                android:backgroundTint="#1671CA"
+                android:text="iniciar Sesión"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edCorreo"
+                android:layout_width="214dp"
+                android:layout_height="52dp"
+                android:layout_marginBottom="52dp"
+                android:drawableLeft="@drawable/person"
+                android:drawableTint="#E2610B"
+                android:ems="10"
+                android:hint="Nombre de usuario"
+                android:inputType="text"
+                android:textColor="#070707"
+                android:textColorHint="#7E7D7D"
+                app:layout_constraintBottom_toTopOf="@+id/edPass"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edPass"
+                android:layout_width="211dp"
+                android:layout_height="49dp"
+                android:layout_marginBottom="56dp"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawableTint="#DE620C"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:password="true"
+                android:textColor="#000000"
+                android:textColorHint="#7E7D7D"
+                app:layout_constraintBottom_toTopOf="@+id/btAcceder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
