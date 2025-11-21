@@ -24,12 +24,12 @@
             android:id="@+id/tvTipoUsuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rol: Empleado"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"
+            android:layout_marginBottom="24dp"
             android:gravity="center"
-            android:layout_marginBottom="24dp" />
+            android:text="Rol: Empleado"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btRegistro"
