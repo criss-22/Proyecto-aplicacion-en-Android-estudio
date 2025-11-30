@@ -261,61 +261,77 @@ class FormularioVista : AppCompatActivity(), FormularioContrato {
 
     //Metodos del contrato
     override fun mostrarDepartamentos(lista: List<Departamento>) {
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, lista.map { it.Departamento }
-        )
+        // Agregamos "Selecciona Departamento" al inicio
+        val datos = listOf("Selecciona Departamento") + lista.map { it.Departamento }
+
+        val adapter = ArrayAdapter(this, R.layout.spinner_item, datos)
+        adapter.setDropDownViewResource(R.layout.spinner_item)
         spnDepartamento.adapter = adapter
 
         val index = lista.indexOfFirst { it.Id_Departamento == idDepartamento }
-        if (index >= 0) spnDepartamento.setSelection(index)
+        if (index >= 0) {
+            spnDepartamento.setSelection(index + 1)
+        } else {
+            spnDepartamento.setSelection(0)
+        }
 
         spnDepartamento.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
-                idDepartamento = lista[position].Id_Departamento
+                // 3. Si elige la posición 0 (Título), no hay ID. Si no, restamos 1.
+                if (position == 0) {
+                    idDepartamento = null
+                } else {
+                    idDepartamento = lista[position - 1].Id_Departamento
+                }
             }
             override fun onNothingSelected(parent: AdapterView<*>) { idDepartamento = null }
         }
-
-        //spnDepartamento.adapter= ArrayAdapter(this, android.R.layout.simple_spinner_item, lista.map { it.Departamento })
     }
 
     override fun mostrarPuestos(lista: List<Puesto>) {
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, lista.map { it.Puesto }
-        )
+        val datos = listOf("Selecciona Puesto") + lista.map { it.Puesto }
+
+        val adapter = ArrayAdapter(this, R.layout.spinner_item, datos)
+        adapter.setDropDownViewResource(R.layout.spinner_item)
         spnPuestos.adapter = adapter
 
         val index = lista.indexOfFirst { it.Id_Puesto == idPuesto }
-        if (index >= 0) spnPuestos.setSelection(index)
+        if (index >= 0) spnPuestos.setSelection(index + 1) else spnPuestos.setSelection(0)
 
         spnPuestos.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
-                idPuesto = lista[position].Id_Puesto
+                if (position == 0) {
+                    idPuesto = null
+                } else {
+                    idPuesto = lista[position - 1].Id_Puesto
+                }
             }
             override fun onNothingSelected(parent: AdapterView<*>) { idPuesto = null }
         }
-
-
-    //spnPuestos.adapter= ArrayAdapter(this, android.R.layout.simple_spinner_item, lista.map { it.Puesto })
-
     }
 
     override fun mostrarTiposUsuario(lista: List<TipoUsuario>) {
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, lista.map { it.Usuario }
-        )
+        val datos = listOf("Selecciona Tipo") + lista.map { it.Usuario }
+
+        val adapter = ArrayAdapter(this, R.layout.spinner_item, datos)
+        adapter.setDropDownViewResource(R.layout.spinner_item)
         spnTiposUsuario.adapter = adapter
 
         val index = lista.indexOfFirst { it.Id_Tipo_Usuario == idTipoUsuario }
-        if (index >= 0) spnTiposUsuario.setSelection(index)
+        if (index >= 0) spnTiposUsuario.setSelection(index + 1) else spnTiposUsuario.setSelection(0)
 
         spnTiposUsuario.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
-                idTipoUsuario = lista[position].Id_Tipo_Usuario
+                if (position == 0) {
+                    idTipoUsuario = null
+                } else {
+                    idTipoUsuario = lista[position - 1].Id_Tipo_Usuario
+                }
             }
             override fun onNothingSelected(parent: AdapterView<*>) { idTipoUsuario = null }
         }
-
-
-    //spnTiposUsuario.adapter= ArrayAdapter(this, android.R.layout.simple_spinner_item, lista.map { it.Usuario })
     }
+
 
     override fun mostrarError(mensaje: String) {
         Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show()

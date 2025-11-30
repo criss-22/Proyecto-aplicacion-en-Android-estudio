@@ -39,15 +39,15 @@
         android:layout_width="181dp"
         android:layout_height="48dp"
         android:layout_marginStart="128dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="17dp"
         android:layout_marginEnd="135dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/borde_spinner_custom"
         android:forceDarkAllowed="true"
         android:theme="@style/ThemeOverlay.AppCompat.Light"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/snpDepartamento" />
+        app:layout_constraintTop_toBottomOf="@+id/spnPuesto" />
 
     <EditText
         android:id="@+id/etNombre"
@@ -70,18 +70,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
-    <Button
-        android:id="@+id/btBorrar"
-        android:layout_width="wrap_content"
-        android:layout_height="56dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="#EF3629"
-        android:text="@string/btBorrar"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/snpDepartamento" />
-
     <EditText
         android:id="@+id/etMaterno"
         android:layout_width="0dp"
@@ -101,20 +89,6 @@
         app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPaterno" />
-
-    <Spinner
-        android:id="@+id/snpDepartamento"
-        android:layout_width="178dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="16dp"
-        android:background="#FFFFFF"
-        android:forceDarkAllowed="true"
-        android:theme="@style/ThemeOverlay.AppCompat.Light"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/spnPuesto"
-        app:layout_constraintTop_toBottomOf="@+id/edTelefono" />
 
     <EditText
         android:id="@+id/etCorreo"
@@ -173,25 +147,13 @@
         android:layout_width="181dp"
         android:layout_height="49dp"
         android:layout_marginTop="10dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/borde_spinner_custom"
         android:forceDarkAllowed="true"
         android:theme="@style/ThemeOverlay.AppCompat.Light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edTelefono" />
-
-    <Button
-        android:id="@+id/btActualizar"
-        android:layout_width="wrap_content"
-        android:layout_height="56dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#1B2631"
-        android:text="@string/btActualizar"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btBorrar" />
 
     <EditText
         android:id="@+id/etPaterno"
@@ -213,23 +175,6 @@
         app:layout_constraintHorizontal_bias="0.536"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etNombre" />
-
-    <Button
-        android:id="@+id/btGuardar"
-        android:layout_width="wrap_content"
-        android:layout_height="56dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="101dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="40dp"
-        android:backgroundTint="#D35400"
-        android:text="@string/btGuardar"
-        android:textColor="#FFFFFF"
-        android:textColorLink="#D35400"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btActualizar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spnPuesto" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
@@ -270,5 +215,67 @@
         app:layout_constraintBottom_toTopOf="@+id/etNombre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/snpDepartamento"
+        android:layout_width="181dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="13dp"
+        android:background="@drawable/borde_spinner_custom"
+        android:forceDarkAllowed="true"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spnPuesto"
+        app:layout_constraintTop_toBottomOf="@+id/edTelefono" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnPuesto"
+        app:layout_constraintVertical_bias="0.776">
+
+        <Button
+            android:id="@+id/btGuardar"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:backgroundTint="#D35400"
+            android:text="@string/btGuardar"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#D35400" />
+
+        <Button
+            android:id="@+id/btActualizar"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="32dp"
+            android:layout_weight="1"
+            android:backgroundTint="#1B2631"
+            android:text="@string/btActualizar"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btBorrar"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="29dp"
+            android:layout_weight="1"
+            android:backgroundTint="#EF3629"
+            android:text="@string/btBorrar"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
