@@ -21,7 +21,7 @@ class LoginVistaVista : AppCompatActivity(), LoginInt {
     private lateinit var edCorreo: EditText
     private lateinit var edPass: EditText
     private lateinit var btAcceder: Button
-    ///no se por que no funciona
+    ///no se por que no funciona puede ser otra cosa
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
