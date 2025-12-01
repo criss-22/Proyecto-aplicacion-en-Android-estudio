@@ -9,9 +9,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.apppeliculas.R
 import com.example.registroasistencia.Modelo.DataClass.LoginResponse
 import com.example.registroasistencia.Presentador.LoginPress
-import com.example.registroasistencia.R
+
 import com.example.registroasistencia.Test
 import com.example.registroasistencia.Vista.Contratos.LoginInt
 
@@ -21,6 +22,7 @@ class LoginVistaVista : AppCompatActivity(), LoginInt {
     private lateinit var edCorreo: EditText
     private lateinit var edPass: EditText
     private lateinit var btAcceder: Button
+    //holalalallala
 //tienes que ponerle commit y despues push para que se hagan los cambios
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
