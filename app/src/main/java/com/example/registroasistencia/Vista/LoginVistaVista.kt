@@ -21,7 +21,7 @@ class LoginVistaVista : AppCompatActivity(), LoginInt {
     private lateinit var edCorreo: EditText
     private lateinit var edPass: EditText
     private lateinit var btAcceder: Button
-//tienes que ponerle commit y despues push para que se hagan los cambios
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
