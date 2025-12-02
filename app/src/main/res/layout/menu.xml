@@ -8,7 +8,7 @@
     android:background="#bccbd2"
     android:backgroundTint="#bccbd2"
     tools:context=".Vista.MenuVista">
-
+<!--jsdbhjfrdujhfguijdfhhjdrghjdrbgjhdbrhjb-->
     <!-- Contenedor centrado para texto + botones -->
     <LinearLayout
         android:id="@+id/layoutMenu"

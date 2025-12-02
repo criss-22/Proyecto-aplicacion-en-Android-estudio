@@ -18,6 +18,7 @@ class MenuVista : AppCompatActivity() {
     private lateinit var btAsistencia: Button
     private lateinit var btMisVis: Button
     private lateinit var btConocenos: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
