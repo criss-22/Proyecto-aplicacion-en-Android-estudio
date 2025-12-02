@@ -13,7 +13,7 @@ import com.example.registroasistencia.R
 
 class MenuVista : AppCompatActivity() {
     private lateinit var tvTipoUsuario: TextView
-
+    //es la vista
     private lateinit var btRegistro: Button
     private lateinit var btAsistencia: Button
     private lateinit var btMisVis: Button
