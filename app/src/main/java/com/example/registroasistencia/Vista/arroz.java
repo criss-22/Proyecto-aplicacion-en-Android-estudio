@@ -1,9 +1,12 @@
 package com.example.registroasistencia.Vista;
 
-public class prueba {
+public class arroz {
 
     //prueba de que funciona git
     //kolsdjknjksdfbnjksdnjkfndsjkfnkjdnfjk
    //JBJHJHSBJHFSDFS
+
+
+
 
 }
