@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bccbd2"
+    android:backgroundTint="#bccbd2"
+    tools:context=".Vista.MenuVista">
+
+    <!-- Contenedor centrado para texto + botones -->
+    <LinearLayout
+        android:id="@+id/layoutMenu"
+        android:layout_width="285dp"
+        android:layout_height="354dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvTipoUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Rol: Empleado"
+            android:textColor="#1B2631"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#1B2631"
+            android:text="@string/btRegistro"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:icon="@drawable/registro"
+            app:iconPadding="0dp"
+            app:iconSize="22dp"
+            app:iconTint="#D35400" />
+
+        <Button
+            android:id="@+id/btAsistencia"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#1B2631"
+            android:text="@string/btnAsistencia"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:icon="@drawable/outline_calendar_month_24"
+            app:iconPadding="0dp"
+            app:iconSize="22dp"
+            app:iconTint="#D35400" />
+
+        <Button
+            android:id="@+id/btMisVis"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#1B2631"
+            android:text="@string/btMisVis"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:icon="@drawable/misionvision"
+            app:iconPadding="0dp"
+            app:iconSize="22dp"
+            app:iconTint="#D35400" />
+
+        <Button
+            android:id="@+id/btConocenos"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="#1B2631"
+            android:text="@string/btConocenos"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:icon="@drawable/meet"
+            app:iconPadding="0dp"
+            app:iconSize="22dp"
+            app:iconTint="#D35400" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
