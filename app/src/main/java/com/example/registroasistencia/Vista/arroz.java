@@ -4,8 +4,7 @@ public class arroz {
 
     //prueba de que funciona git
     //kolsdjknjksdfbnjksdnjkfndsjkfnkjdnfjk
-   //JBJHJHSBJHFSDFS
-    // Tetano
+   //JBJHJHSBJHFSDF
 
 
 
