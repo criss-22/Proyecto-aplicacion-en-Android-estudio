@@ -19,6 +19,8 @@ class MenuVista : AppCompatActivity() {
     private lateinit var btMisVis: Button
     private lateinit var btConocenos: Button
 
+    private lateinit var btCerrar: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -33,7 +35,7 @@ class MenuVista : AppCompatActivity() {
         btRegistro = findViewById(R.id.btRegistro)
         btMisVis = findViewById(R.id.btMisVis)
         btConocenos = findViewById(R.id.btConocenos)
-
+        btCerrar = findViewById(R.id.btCerrar)
 
         // Recuperamos el dato recibido desde el Login
         val tipoUsuario = intent.getIntExtra("tipoUsuario", -1)
@@ -70,6 +72,11 @@ class MenuVista : AppCompatActivity() {
 }
 */
 
+        btCerrar.setOnClickListener {
+            val intent = Intent(this, LoginVistaVista::class.java)
+            // intent.putExtra("id", id)
+            startActivity(intent)
+        }
 
 
         btRegistro.setOnClickListener {

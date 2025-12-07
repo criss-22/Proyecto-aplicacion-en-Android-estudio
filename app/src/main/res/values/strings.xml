@@ -22,7 +22,7 @@
     <string name="txttitulo">Lista de asistencias</string>
     <string name="txtEstado">Estado</string>
     <string name="txtdia">Día</string>
-
+<string name="btCerrar">Cerrar Sesion</string>
 
 
 

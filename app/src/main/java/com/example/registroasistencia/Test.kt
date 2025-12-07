@@ -27,8 +27,6 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.io.File
 import java.io.FileOutputStream
 object Test {
-
-
     fun String.toRequest(): RequestBody {
         return RequestBody.create("text/plain".toMediaTypeOrNull(), this)
     }
@@ -40,7 +38,6 @@ object Test {
     private val api = retrofit.create(ApiEmpleados::class.java)
     private val apiD=retrofit.create(ApiDatos::class.java)
     private val apiMisionVision=retrofit.create(ApiMisionVision::class.java)
-
     private val apiService=retrofit.create(ApiService::class.java)
 
     fun probarListar() {
@@ -88,8 +85,7 @@ object Test {
         val puesto = "3".toRequest()
 
         // =====================================================
-        // 🔥 CARGAR IMAGEN DESDE DRAWABLE
-        // Tu imagen: imglogin.png → R.drawable.imglogin
+
         // =====================================================
 
         val drawable = context.getDrawable(R.drawable.imglogin)!!
@@ -108,7 +104,7 @@ object Test {
         )
 
         // =====================================================
-        // 🔥 LLAMAR API
+
         // =====================================================
 
         api.crearEmpleado(
@@ -147,7 +143,7 @@ object Test {
         var fotoPart: MultipartBody.Part? = null
 
         // =======================================================
-        // 🔥 SI QUIERES ENVIAR IMAGEN DESDE DRAWABLE
+
         // =======================================================
         if (enviarImagen) {
 
@@ -178,7 +174,7 @@ object Test {
         }
 
         // =======================================================
-        // 🔥 LLAMAR API
+
         // =======================================================
         api.actualizarEmpleado(
             id,

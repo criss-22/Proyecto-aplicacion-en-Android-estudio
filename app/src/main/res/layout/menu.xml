@@ -10,14 +10,15 @@
     tools:context=".Vista.MenuVista">
 <!--jsdbhjfrdujhfguijdfhhjdrghjdrbgjhdbrhjb-->
     <!-- Contenedor centrado para texto + botones -->
+
     <LinearLayout
         android:id="@+id/layoutMenu"
         android:layout_width="285dp"
         android:layout_height="354dp"
+        android:layout_marginTop="132dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -93,5 +94,35 @@
             app:iconTint="#D35400" />
 
     </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="284dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728">
+
+        <Button
+            android:id="@+id/btCerrar"
+            android:layout_width="257dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#1B2631"
+            android:text="@string/btCerrar"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:icon="@drawable/baseline_exit_to_app_24"
+            app:iconPadding="0dp"
+            app:iconSize="22dp"
+            app:iconTint="#D35400"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
