@@ -34,11 +34,13 @@ class LoginVistaVista : AppCompatActivity(), LoginInt {
         //test.probarEliminar()
 
         //test.probarListarDepartamentos()
-        // test.probarListarPuestos()
-        // test.probarListarTiposUsuario()
+        //test.probarListarPuestos()
+        //test.probarListarTiposUsuario()
 
-        //test.probarMisionVision()
-        //test.probarLogin("adan", "1")
+        //hola mundo
+
+        test.probarMisionVision()
+        test.probarLogin("adan", "1")
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
