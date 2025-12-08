@@ -1,6 +1,7 @@
 package com.example.registroasistencia
 
 fun main() {
+
     val r = Test.probarListarSync()
     val x = Test.probarMisionSync()
 
@@ -9,4 +10,5 @@ fun main() {
 
     println("Resultado ->")
     println(x.body())
+
 }
