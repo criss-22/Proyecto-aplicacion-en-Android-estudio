@@ -52,8 +52,8 @@ class MisionVisionVista : AppCompatActivity(), MisionVisionInt {
     }
 
    // private val URL =  "https://isai.grupoctic.com/BocetoProyect/MisionVision/images/"
-   private val URL =  "https://juandios.grupoctic.com/Peliculas/img/"
-
+  // private val URL =  "https://juandios.grupoctic.com/Peliculas/img/"
+ private val URL =  "https://acerosalonso.grupoctic.com/MisionVision/images/"
     override fun mostrarInfo(datos: MisionVisionRespone) {
         txtMision.text = datos.mision
         txtVision.text = datos.vision

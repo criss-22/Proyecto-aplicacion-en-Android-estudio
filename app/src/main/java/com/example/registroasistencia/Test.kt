@@ -40,6 +40,14 @@ object Test {
     private val apiMisionVision=retrofit.create(ApiMisionVision::class.java)
     private val apiService=retrofit.create(ApiService::class.java)
 
+    fun probarListarSync(): Response<List<Empleado>> {
+        return api.listarEmpleados().execute()
+    }
+
+    fun probarMisionSync(): Response<List<MisionVisionRespone>> {
+        return apiMisionVision.misionVision().execute()
+    }
+
     fun probarListar() {
         api.listarEmpleados().enqueue(object : Callback<List<Empleado>> {
 

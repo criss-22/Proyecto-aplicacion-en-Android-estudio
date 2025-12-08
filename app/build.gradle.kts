@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.testImplementation
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -35,8 +37,14 @@ android {
     }
 }
 
+
+
+
 dependencies {
-    implementation ("com.github.bumptech.glide:glide:4.15.0")
+
+
+
+            implementation ("com.github.bumptech.glide:glide:4.15.0")
     implementation ("com.google.android.exoplayer:exoplayer:2.19.1")
     implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
 
@@ -63,4 +71,6 @@ dependencies {
     implementation("androidx.media3:media3-ui:1.4.1")
     implementation("androidx.media3:media3-exoplayer-dash:1.4.1")
     implementation("androidx.media3:media3-extractor:1.4.1")
+
+
 }
