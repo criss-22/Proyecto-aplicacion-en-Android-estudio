@@ -52,12 +52,18 @@ class AsistenciaVista : AppCompatActivity(), AsistenciaInt {
             val txtDia = TextView(this)
             txtDia.text = dia
             txtDia.setPadding(20, 20, 20, 20)
+             txtDia.setBackgroundResource(R.drawable.border)
 
-            val txtEstado = TextView(this)
+
+             val txtEstado = TextView(this)
             txtEstado.text = estado
             txtEstado.setPadding(20, 20, 20, 20)
+             txtEstado.setBackgroundResource(R.drawable.border)
 
-            row.addView(txtDia)
+
+
+
+             row.addView(txtDia)
             row.addView(txtEstado)
 
             tblAsistencias.addView(row)
