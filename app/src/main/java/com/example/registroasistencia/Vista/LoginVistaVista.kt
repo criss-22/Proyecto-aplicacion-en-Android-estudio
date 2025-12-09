@@ -16,6 +16,8 @@ import com.example.registroasistencia.Test
 import com.example.registroasistencia.Vista.Contratos.LoginInt
 
 
+
+
 class LoginVistaVista : AppCompatActivity(), LoginInt {
     private lateinit var presenter: LoginPress
     private lateinit var edCorreo: EditText
@@ -27,6 +29,7 @@ class LoginVistaVista : AppCompatActivity(), LoginInt {
         enableEdgeToEdge()
         setContentView(R.layout.login)
         val test = Test
+
         //test.probarListar()
         //test.probarBuscar("isa")
         //test.probarCrear(this)
@@ -39,8 +42,8 @@ class LoginVistaVista : AppCompatActivity(), LoginInt {
 
         //hola mundo
 
-        test.probarMisionVision()
-        test.probarLogin("adan", "1")
+        //test.probarMisionVision()
+        //test.probarLogin("adan", "1")
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

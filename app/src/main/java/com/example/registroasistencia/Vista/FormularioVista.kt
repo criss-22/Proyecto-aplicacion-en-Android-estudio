@@ -17,6 +17,8 @@ import androidx.core.content.FileProvider
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.bumptech.glide.load.resource.bitmap.DownsampleStrategy
 import com.example.registroasistencia.Modelo.DataClass.Departamento
 import com.example.registroasistencia.Modelo.DataClass.Puesto
 import com.example.registroasistencia.Modelo.DataClass.TipoUsuario
@@ -160,6 +162,25 @@ class FormularioVista : AppCompatActivity(), FormularioContrato {
         else{
             ivFoto.setImageResource(R.drawable.imglogin)
         }
+        /*
+        if (!foto.isNullOrEmpty()) {
+            Glide.with(this)
+                .load("https://juandios.grupoctic.com/Peliculas/img/$foto")
+                .override(200, 200) // limita tamaño máximo para no explotar memoria
+                .downsample(DownsampleStrategy.CENTER_INSIDE) // reduce antes de dibujar
+                .centerCrop()
+                .into(ivFoto)
+        } else {
+            // Si no hay foto, poner una imagen por defecto
+            ivFoto.setImageResource(R.drawable.imglogin)
+        }*/
+
+
+
+
+
+
+
 
         Tomar.setOnClickListener {
             requestPermission.launch(android.Manifest.permission.CAMERA)
